@@ -1,0 +1,74 @@
+/* Cấu trúc của card */
+.card {
+    width: 9cm;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Căn chỉnh hình ảnh trong card */
+.card__img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Đảm bảo hình ảnh không bị biến dạng */
+}
+
+/* Căn chỉnh avatar */
+.card__avatar {
+    display: flex;
+    justify-content: center; /* Căn giữa avatar */
+    margin-top: -50px; /* Di chuyển avatar lên một chút */
+}
+
+/* Căn chỉnh hình avatar */
+.card__avatar img {
+    border-radius: 50%; /* Làm tròn avatar */
+    border: 4px solid white; /* Thêm viền trắng cho avatar */
+}
+
+/* Nội dung của card */
+.card__content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Tiêu đề */
+.card__title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Mô tả */
+.card__description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Nút bấm */
+.card__buttons .btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    margin: 5px;
+    background-color: #3b5998; /* Màu nền cho Facebook */
+    display: inline-block;
+}
+
+/* Nút Zalo */
+.card__buttons .zalo-link {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #4c8c4a; /* Màu nền cho Zalo */
+    display: inline-block;
+}
+.zalo-link {
+    text-decoration: none;
+    color: #007bff;
+    cursor: pointer;
+}
